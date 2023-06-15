@@ -1,38 +1,218 @@
-.App {
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.stretch-card > .card {
+  width: 100%;
+  min-width: 100%;
+}
+
+body {
+  background-color: #b0e6f9;
+}
+.flex {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+@media (max-width: 991.98px) {
+  .padding {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .padding {
+    padding: 1rem;
+  }
+}
+
+.padding {
+  padding: 5rem;
+}
+
+.grid-margin,
+.purchace-popup > div {
+  margin-bottom: 25px;
+}
+
+.card {
+  border: 0;
+  border-radius: 2px;
+}
+
+.card-weather {
+  background: #e1ecff;
+  background-image: linear-gradient(
+    to left bottom,
+    #d6eef6,
+    #dff0fa,
+    #e7f3fc,
+    #eff6fe,
+    #f6f9ff
+  );
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card-weather .card-body:first-child {
+  background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1557323760/weather.svg)
+    no-repeat center;
+  background-size: cover;
+}
+
+.card .card-body {
+  padding: 1.88rem 1.81rem;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+.card-weather .weather-date-location {
+  padding: 0 0 38px;
+}
+
+.h3,
+h3 {
+  font-size: 1.56rem;
+}
+
+.h1,
+.h2,
+.h3,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.text-gray,
+.card-subtitle,
+.new-accounts ul.chats li.chat-persons a p.joined-date {
+  color: #969696;
+}
+
+p {
+  font-size: 13px;
+}
+
+.text-gray,
+.card-subtitle,
+.new-accounts ul.chats li.chat-persons a p.joined-date {
+  color: #969696;
+}
+
+.card-weather .weather-data {
+  padding: 0 0 4.75rem;
+}
+
+.mr-auto,
+.mx-auto {
+  margin-right: auto !important;
+}
+
+.display-3 {
+  font-size: 2.5rem;
+}
+
+.card-weather .card-body {
+  background: #ffffff;
+}
+
+.card-weather .weakly-weather {
+  background: #ffffff;
+  overflow-x: auto;
+}
+
+.card-weather .weakly-weather .weakly-weather-item {
+  flex: 0 0 14.28%;
+  border-right: 1px solid #f2f2f2;
+  padding: 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mb-0,
+.my-0 {
+  margin-bottom: 0 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-weather .weakly-weather .weakly-weather-item i {
+  font-size: 1.2rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.padding {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.inputs {
+  margin-bottom: 20px;
+  display: flex;
+}
+.inputs button {
+  min-width: 100px;
+  border-radius: 8px;
+  margin-left: 50px;
+}
+.inputs input {
+  min-width: 550px;
+  border-radius: 5px;
+  text-indent: 20px;
+  border: none;
+}
+.text-gray {
+  display: flex;
+  flex-direction: column;
+}
+.weather-data d-flex {
+  min-width: 100px;
+}
+.temp {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+}
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.values {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.icons {
+  font-size: 35px;
+  color: #f65229;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.details2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: rgb(100, 99, 99);
+}
+.switch {
+  font-size: 40px;
 }
