@@ -108,6 +108,26 @@ const App = () => {
                           <span className="symbol">&deg;</span>C
                         </div>
                       </h4>
+                      <div className="temp2">
+                        <div className="minTemp">
+                          Min temp :
+                          {data && (
+                            <div>
+                              {(data.main.temp_min - 273.15).toFixed(1)}
+                            </div>
+                          )}
+                          <span className="symbol">&deg;</span>C
+                        </div>
+                        <div className="maxTemp">
+                          Max temp :
+                          {data && (
+                            <div>
+                              {(data.main.temp_max - 273.15).toFixed(1)}
+                            </div>
+                          )}
+                          <span className="symbol">&deg;</span>C
+                        </div>
+                      </div>
                       <div className="switch">{geticon}</div>
                       <p>
                         {data && (

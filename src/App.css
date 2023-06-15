@@ -190,7 +190,7 @@ p {
 .temp {
   display: flex;
   flex-direction: row;
-  width: 200px;
+  width: 150px;
 }
 .details {
   display: flex;
@@ -215,4 +215,15 @@ p {
 }
 .switch {
   font-size: 40px;
+  margin-top: 20px;
+}
+.minTemp,
+.maxTemp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 15px;
+}
+.weather-data d-flex {
+  max-height: 200px;
 }
