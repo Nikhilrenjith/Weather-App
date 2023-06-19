@@ -224,6 +224,19 @@ p {
   justify-content: space-evenly;
   font-size: 15px;
 }
-.weather-data d-flex {
-  max-height: 200px;
+@media screen and (max-width: 768px) {
+  body {
+    min-width: 400px;
+  }
+  .inputs {
+    min-width: 100px;
+  }
+  .details {
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  .details2 {
+    display: none;
+  }
 }
