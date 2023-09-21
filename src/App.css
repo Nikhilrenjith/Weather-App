@@ -226,7 +226,8 @@ p {
 }
 @media screen and (max-width: 768px) {
   .inputs {
-    min-width: 100px;
+    display: flex;
+    flex-direction: column;
   }
   .details {
     min-width: 200px;
@@ -235,5 +236,8 @@ p {
   }
   .details2 {
     display: none;
+  }
+  .padding {
+    max-width: 600px;
   }
 }

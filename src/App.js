@@ -3,7 +3,7 @@ import Axios from "axios";
 import "./App.css";
 import * as weathericons from "weather-icons-react";
 
-const key = "ae0d055343227e09d072824637bc948c";
+const key = "e859b04c25a1b24525d2e6fe85389c91";
 
 const App = () => {
   const [city, setCity] = useState("");
@@ -79,7 +79,7 @@ const App = () => {
                   className="btn btn-primary"
                   onClick={fetchData}
                 >
-                  Fetch
+                  Search
                 </button>
                 <div></div>
               </div>
