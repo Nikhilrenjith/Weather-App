@@ -225,9 +225,6 @@ p {
   font-size: 15px;
 }
 @media screen and (max-width: 768px) {
-  body {
-    min-width: 400px;
-  }
   .inputs {
     min-width: 100px;
   }
